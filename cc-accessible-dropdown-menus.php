@@ -6,7 +6,6 @@ Description:  Makes dropdown menus in default WordPress theme keyboard accessibl
 Version:      0.2
 Author:       Graham Armfield
 Author URI:   http://www.coolfields.co.uk
- 
 */
 function writeScriptFile() {
    $path = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));

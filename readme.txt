@@ -1,9 +1,18 @@
+=== cc Accessible Dropdown Menus ===
+Contributors: grahamarmfield, sabreuse
+Donate link: http://example.com/
+Tags: accessibility, a11y, menus, dropdown menus
+Requires at least: 3.0.1
+Tested up to: 3.6
+Stable tag: 0.2
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-ccAccessibleDropdownMenus Plugin Version 0.1
-============================================
+Makes dropdown menus in default WordPress themes keyboard accessible.
 
-Purpose:
---------
+== Description ==
+
+= Purpose: =
 
 Many sites have dropdown menus where the expanding of the links can only be triggered by a mouse hover. This means that for keyboard only users parts of the site are harder or sometimes impossible to reach.
 
@@ -16,8 +25,7 @@ The mechanism used in this plugin has been copied from Blake Haswell's excellent
 
 I've made some necessary amendments to get it to work in WordPress - starting with the default WordPress themes.
 
-Works With:
------------
+= Works With: =
 
 The plugin currently only works in the default WordPress themes 'twentyeleven' and 'twentyten' - this has been tested. 
 It may work in child themes using those themes as the parent but that has not been tested.
@@ -25,20 +33,7 @@ It may work in child themes using those themes as the parent but that has not be
 The plugin may also work in any other themes that have the horizontal navigation in a container with an id of 'access' may also work. This also has not been tested.
 
 
-What the Plugin Consists Of:
-----------------------------
-
-There are three files in the plugin folder:
-
-readme.txt - this file
-
-cc-accessible-dropdown-menus.php - PHP file containing the functions to insert the necessary code into WordPress pages
-
-cc-accessible-dropdown-menus.js - 
-
-
-How it Works:
--------------
+= How it Works: =
 
 The plugin uses a combination of CSS and javascript to enable the dropdown menus to be keyboard controlled.
 
@@ -51,20 +46,40 @@ In the absence of javascript the full submenu lists may not open but the individ
 For a full description of the functionality see Blake Haswell's page at: http://blakehaswell.com/lab/dropdown/deux/
 
 
-Installing the Plugin:
-----------------------
+
+== Installation ==
+
+= Installing the Plugin: =
 
 Place the cc-accessible-dropdown-menus folder into the plugins folder within your site. Then go to the plugins page in the Admin area and activate the plugin. There are no options for the plugin in version 0.1.
 
-Uninstalling the Plugin:
-------------------------
+= Uninstalling the Plugin: =
 
 Deactivate the plugin from the plugins page. If you wish to you can delete the cc-accessible-dropdown-menus folder from your plugins folder.
 
+== Frequently Asked Questions ==
 
+= A question that someone might have =
 
-Changelog:
-----------
+An answer to that question.
 
-0.1 - Initial version.
+= What about foo bar? =
 
+Answer to foo bar dilemma.
+
+== Screenshots ==
+
+1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
+the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
+directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
+(or jpg, jpeg, gif).
+2. This is the second screen shot
+
+== Changelog ==
+
+= 0.2 =
+* Correctly enqueue scripts and styles.
+* README Updates for initial Plugin Repo submission.
+
+= 0.1 =
+* Original version.
