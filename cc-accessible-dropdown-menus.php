@@ -7,13 +7,14 @@ Version:      0.2
 Author:       Graham Armfield
 Author URI:   http://www.coolfields.co.uk
 */
-function writeScriptFile() {
-   $path = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));
-    echo '<script src="'.$path.'cc-accessible-dropdown-menus.js" type="text/javascript"></script>';
-    echo '<script type="text/javascript"></script>';
+
+function kadm_scripts() {
+   wp_enqueue_script(
+      'kadm_script', plugins_url( '/cc-accessible-dropdown-menus.js' , __FILE__ ), array( 'jquery'), false, true
+   );
 }
 
-add_action('wp_footer', 'writeScriptFile');
+add_action( 'wp_enqueue_scripts', 'kadm_scripts' );
 
 
 function reviseStyles() {
