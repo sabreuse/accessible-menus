@@ -8,37 +8,25 @@ Author:       Graham Armfield
 Author URI:   http://www.coolfields.co.uk
 */
 
-function kadm_scripts() {
+function ccadm_scripts() {
    wp_enqueue_script(
-      'kadm_script', plugins_url( '/cc-accessible-dropdown-menus.js' , __FILE__ ), array( 'jquery'), false, true
+      'ccadm_script', plugins_url( '/cc-accessible-dropdown-menus.js' , __FILE__ ), array( 'jquery'), false, true
    );
 }
 
-add_action( 'wp_enqueue_scripts', 'kadm_scripts' );
+add_action( 'wp_enqueue_scripts', 'ccadm_scripts' );
 
 
 function reviseStyles() {
    $strHtml = '<style type="text/css">
-   /* Extra styles to allow keyboard accessibility of dropdown menus in default Wordpress theme */
-   #access ul ul {
+   /* Extra styles to allow keyboard accessibility of dropdown menus */
+   #site-navigation ul ul {
       display: block;
       margin-left:-9999px;
    }
 
-   #access a:focus,
-   #access ul ul :focus {
-   	background: #333;
-   	color: #fff;
-   }
-
-   #access li.hover > a,
-   #access ul ul .hover > a {
-   	background: #333;
-   	color: #fff;
-   }
-
-   #access ul li.hover > ul,
-   #access ul a:focus+ul {
+   #site-navigation ul li.hover > ul,
+   #site-navigation ul a:focus+ul {
    	margin-left:0;
    }
 </style>';

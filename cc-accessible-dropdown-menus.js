@@ -40,5 +40,5 @@ function dropdown(dropdownId, hoverClass, mouseOffDelay) {
 	function addClass(li) { return li.className + ' ' + hoverClass; }
 	function removeClass(li) { return li.className.replace(" " + hoverClass, ""); }
 }
-dropdown("access", "hover", 250);
+dropdown("site-navigation", "hover", 250);
 
