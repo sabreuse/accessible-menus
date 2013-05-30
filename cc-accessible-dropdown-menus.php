@@ -1,11 +1,9 @@
 <?php
 /*
-Plugin Name:  ccAccessibleDropdownMenus
-Plugin URI:   http://www.coolfields.co.uk
+Plugin Name:  Keyboard Accessible Dropdown Menus
 Description:  Makes dropdown menus in default WordPress theme keyboard accessible
 Version:      0.2
-Author:       Graham Armfield
-Author URI:   http://www.coolfields.co.uk
+Author:       Amy Hendrix, based on previous work by Graham Armfield
 */
 
 function ccadm_scripts() {

@@ -78,7 +78,8 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 == Changelog ==
 
 = 0.2 =
-* Correctly enqueue scripts and styles.
+* Pre-release build for client needs. Compatible with Twenty Twelve & Twenty Thirteen.
+* Correctly enqueue scripts.
 * README Updates for initial Plugin Repo submission.
 
 = 0.1 =
