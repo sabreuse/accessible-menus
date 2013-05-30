@@ -70,6 +70,7 @@ Answer to foo bar dilemma.
 == Changelog ==
 
 = 0.3 =
+* Fix an issue that caused the keyboard access code to break mobile navigation.
 * Complete rewrite of the original JavaScript, which didn't have an explicit license that I could find.
 
 = 0.2 =

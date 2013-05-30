@@ -2,7 +2,7 @@
 /*
 Plugin Name:  Keyboard Accessible Dropdown Menus
 Description:  Makes dropdown menus in default WordPress themes keyboard accessible
-Version:      0.2
+Version:      0.3
 Author:       Amy Hendrix, based on previous work by Graham Armfield
 */
 
