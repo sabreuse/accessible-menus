@@ -4,7 +4,7 @@ Donate link: http://example.com/
 Tags: accessibility, a11y, menus, dropdown menus
 Requires at least: 3.0.1
 Tested up to: 3.6
-Stable tag: 0.2
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,15 +67,10 @@ An answer to that question.
 
 Answer to foo bar dilemma.
 
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
-(or jpg, jpeg, gif).
-2. This is the second screen shot
-
 == Changelog ==
+
+= 0.3 =
+* Complete rewrite of the original JavaScript, which didn't have an explicit license that I could find.
 
 = 0.2 =
 * Pre-release build for client needs. Compatible with Twenty Twelve & Twenty Thirteen.

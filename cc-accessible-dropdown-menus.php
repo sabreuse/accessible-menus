@@ -16,7 +16,8 @@ add_action( 'wp_enqueue_scripts', 'ccadm_scripts' );
 
 
 function reviseStyles() {
-   $strHtml = '<style type="text/css">
+   if (!wp_is_mobile())
+   {   $strHtml = '<style type="text/css">
    /* Extra styles to allow keyboard accessibility of dropdown menus */
    #site-navigation ul ul {
       display: block;
@@ -25,10 +26,11 @@ function reviseStyles() {
 
    #site-navigation ul li.hover > ul,
    #site-navigation ul a:focus+ul {
-   	margin-left:0;
+      margin-left:0;
    }
 </style>';
 
-   echo $strHtml;
+   echo $strHtml;}
 }
+
 add_action('wp_head', 'reviseStyles');
