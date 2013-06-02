@@ -2,7 +2,7 @@
 Contributors: grahamarmfield, sabreuse
 Donate link: http://example.com/
 Tags: accessibility, a11y, menus, dropdown menus
-Requires at least: 3.0.1
+Requires at least: 3.4
 Tested up to: 3.6
 Stable tag: 0.3
 License: GPLv2 or later
@@ -27,7 +27,7 @@ I've made some necessary amendments to get it to work in WordPress - starting wi
 
 = Works With: =
 
-The plugin currently only works in the default WordPress themes 'twentyeleven' and 'twentyten' - this has been tested. 
+The plugin currently only works in the default WordPress themes 'twentytwelve' and 'twentythirteen' - this has been tested. 
 It may work in child themes using those themes as the parent but that has not been tested.
 
 The plugin may also work in any other themes that have the horizontal navigation in a container with an id of 'access' may also work. This also has not been tested.
