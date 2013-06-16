@@ -3,7 +3,7 @@ Contributors: sabreuse, grahamarmfield
 Tags: accessibility, a11y, menus, dropdown menus, navigation, keyboard navigation
 Requires at least: 3.4
 Tested up to: 3.6
-Stable tag: 0.3
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,13 +17,13 @@ Many sites have dropdown menus where the expanding of the links can only be trig
 
 This plugin makes these dropdown menus keyboard accessible. When tabbing through the primary navigation the sub level menus will become visible and users will be able to tab to the lower level links.
 
-The current version has been tested by sighted keyboard users as well as by users of the JAWS and NVDA screen readers. If you are a user of a different screen reader, we'd love to hear from you whether this solution works for you!
+The current version has been tested by both sighted keyboard-only users and screen reader users. If it doesn't work for your reader, please let us know!
 
 = How it Works: =
 
 The plugin uses a combination of CSS and javascript to enable the dropdown menus to be keyboard controlled.
 
-Using the script, whenever a link in the menu gets focus its containing list item (<li>) is given a class of hover. This enables the new CSS definitions to open any hidden submenus and bring those links into the tabbing order.
+Using the script, whenever a link in the menu gets focus its containing list item (<li>) is given the necessary class. This enables the new CSS definitions to open any hidden submenus and bring those links into the tabbing order.
 
 In the absence of javascript the full submenu lists may not open but the individual sub-links can be tabbed to.
 
@@ -40,13 +40,17 @@ The mechanism used in this plugin is based on the same logic used in Blake Haswe
 
 = Will this work with any theme? =
 
-At the moment, the plugin works in Twenty Twelve and Twenty Thirteen. For Twenty Ten and Twenty Eleven, see Graham's original plugin at http://www.coolfields.co.uk/2011/12/wordpress-keyboard-accessible-dropdown-menus-plugin-version-0-1/. Support for other themes is planned for future releases.
+We can't guarantee that it works in all themes, but it now works in many more than in earlier versions. It has been tested in Twenty Ten through Twenty Thirteen, themes based on Automattic's Underscores base theme, and a number of others. The plugin looks for the "navigation" ARIA role rather than any particular ID, so it should work in most themes that correctly implement roles.
 
 = What about child themes? =
 
-If the plugin works in a parent theme, it should work in most child themes based on that parent. However, because of the nature of child themes, this cannot be guaranteed in every case.
+If the plugin works in a parent theme, it should work in child themes based on that parent. However, because of the nature of child themes, this cannot be guaranteed.
 
 == Changelog ==
+
+= 0.4 =
+* Extend to multiple themes: now works with all the Twenties, themes based on Underscores, and many others, provided they correctly use ARIA role=navigation for menus.
+* JavaScript refactoring for better performance.
 
 = 0.3 =
 * Fix an issue that caused the keyboard access code to break mobile navigation.
