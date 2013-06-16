@@ -5,12 +5,12 @@
 	}
 
 	if (!is_touch_device()) {
-		$('#site-navigation li').hover(
+		$('[role=navigation] li').hover(
 			function(){$(this).addClass("hover");},
-			function(){$(this).delay('250').removeClass("hover");}
+			function(){$(this).delay('250').removeClass("ccadm-hover");}
 		);
-		$('#site-navigation li a').on('focus blur',
-			function(){$(this).parents().toggleClass("hover");}
+		$('[role=navigation] li a').on('focus blur',
+			function(){$(this).parents().toggleClass("ccadm-hover");}
 		);
 	}
 }(jQuery));

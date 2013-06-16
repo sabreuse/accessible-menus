@@ -7,30 +7,28 @@ Author:       Amy Hendrix, based on previous work by Graham Armfield
 */
 
 function ccadm_scripts() {
-   wp_enqueue_script(
-      'ccadm_script', plugins_url( '/cc-accessible-dropdown-menus.js' , __FILE__ ), array( 'jquery'), false, true
-   );
+	wp_enqueue_script(
+		'ccadm_script', plugins_url( '/cc-accessible-dropdown-menus.js' , __FILE__ ), array( 'jquery'), false, true
+	);
 }
-
 add_action( 'wp_enqueue_scripts', 'ccadm_scripts' );
 
 
 function reviseStyles() {
-   if (!wp_is_mobile())
-   {   $strHtml = '<style type="text/css">
-   /* Extra styles to allow keyboard accessibility of dropdown menus */
-   #site-navigation ul ul {
-      display: block;
-      margin-left:-9999px;
-   }
+	if (!wp_is_mobile())
+		{   $strHtml = '<style type="text/css">
+		/* Extra styles to allow keyboard accessibility of dropdown menus */
+		[role="navigation"] ul ul {
+			display: block !important;
+			margin-left:-9999px !important;
+		}
 
-   #site-navigation ul li.hover > ul,
-   #site-navigation ul a:focus+ul {
-      margin-left:0;
-   }
-</style>';
+		[role="navigation"] ul li.ccadm-hover > ul,
+		[role="navigation"] ul a:focus+ul {
+			margin-left:0 !important;
+		}
+	</style>';
 
-   echo $strHtml;}
+		echo $strHtml;}
 }
-
 add_action('wp_head', 'reviseStyles');
