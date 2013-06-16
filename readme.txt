@@ -1,7 +1,6 @@
 === cc Accessible Dropdown Menus ===
-Contributors: grahamarmfield, sabreuse
-Donate link: http://example.com/
-Tags: accessibility, a11y, menus, dropdown menus
+Contributors: sabreuse, grahamarmfield
+Tags: accessibility, a11y, menus, dropdown menus, navigation, keyboard navigation
 Requires at least: 3.4
 Tested up to: 3.6
 Stable tag: 0.3
@@ -16,67 +15,47 @@ Makes dropdown menus in default WordPress themes keyboard accessible.
 
 Many sites have dropdown menus where the expanding of the links can only be triggered by a mouse hover. This means that for keyboard only users parts of the site are harder or sometimes impossible to reach.
 
+This plugin makes these dropdown menus keyboard accessible. When tabbing through the primary navigation the sub level menus will become visible and users will be able to tab to the lower level links.
 
-This plugin attempts to make these dropdown menus keyboard accessible - intially in the WordPress default themes. When tabbing through the primary navigation the sub level menus will become visible and users will be able to tab to the lower level links.
-
-Much work has been done in the area of accessible dropdown menus and there is nothing original in this plugin. But perhaps it is the first time that a solution has been placed in a WordPress plugin.
-
-The mechanism used in this plugin has been copied from Blake Haswell's excellent example of a multi-level accessible dropdown menu. You can find it at: http://blakehaswell.com/lab/dropdown/deux/
-
-I've made some necessary amendments to get it to work in WordPress - starting with the default WordPress themes.
-
-= Works With: =
-
-The plugin currently only works in the default WordPress themes 'twentytwelve' and 'twentythirteen' - this has been tested. 
-It may work in child themes using those themes as the parent but that has not been tested.
-
-The plugin may also work in any other themes that have the horizontal navigation in a container with an id of 'access' may also work. This also has not been tested.
-
+The current version has been tested by sighted keyboard users as well as by users of the JAWS and NVDA screen readers. If you are a user of a different screen reader, we'd love to hear from you whether this solution works for you!
 
 = How it Works: =
 
 The plugin uses a combination of CSS and javascript to enable the dropdown menus to be keyboard controlled.
 
-An extra stylesheet block is included in the header section of each WordPress page and the small javascript file is included at the bottom of the page so as not to slow the page down.
-
 Using the script, whenever a link in the menu gets focus its containing list item (<li>) is given a class of hover. This enables the new CSS definitions to open any hidden submenus and bring those links into the tabbing order.
 
 In the absence of javascript the full submenu lists may not open but the individual sub-links can be tabbed to.
 
-For a full description of the functionality see Blake Haswell's page at: http://blakehaswell.com/lab/dropdown/deux/
+= Credits: =
 
+Current version built and maintained by Amy Hendrix.
 
+The original version of this plugin was built by Graham Armfield. It is still available at http://www.coolfields.co.uk/2011/12/wordpress-keyboard-accessible-dropdown-menus-plugin-version-0-1/
 
-== Installation ==
+The mechanism used in this plugin is based on the same logic used in Blake Haswell's excellent example of a multi-level accessible dropdown menu. You can find it at: http://blakehaswell.com/lab/dropdown/deux/
 
-= Installing the Plugin: =
-
-Place the cc-accessible-dropdown-menus folder into the plugins folder within your site. Then go to the plugins page in the Admin area and activate the plugin. There are no options for the plugin in version 0.1.
-
-= Uninstalling the Plugin: =
-
-Deactivate the plugin from the plugins page. If you wish to you can delete the cc-accessible-dropdown-menus folder from your plugins folder.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Will this work with any theme? =
 
-An answer to that question.
+At the moment, the plugin works in Twenty Twelve and Twenty Thirteen. For Twenty Ten and Twenty Eleven, see Graham's original plugin at http://www.coolfields.co.uk/2011/12/wordpress-keyboard-accessible-dropdown-menus-plugin-version-0-1/. Support for other themes is planned for future releases.
 
-= What about foo bar? =
+= What about child themes? =
 
-Answer to foo bar dilemma.
+If the plugin works in a parent theme, it should work in most child themes based on that parent. However, because of the nature of child themes, this cannot be guaranteed in every case.
 
 == Changelog ==
 
 = 0.3 =
 * Fix an issue that caused the keyboard access code to break mobile navigation.
-* Complete rewrite of the original JavaScript, which didn't have an explicit license that I could find.
+* Completely replace the original JavaScript to modernize the code and allow for licensing.
 
 = 0.2 =
 * Pre-release build for client needs. Compatible with Twenty Twelve & Twenty Thirteen.
 * Correctly enqueue scripts.
-* README Updates for initial Plugin Repo submission.
+* Reformat README for Plugin Repo submission.
 
 = 0.1 =
 * Original version.

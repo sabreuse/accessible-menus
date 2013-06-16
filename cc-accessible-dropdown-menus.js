@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+(function($) {
 
 	function is_touch_device() {
 		return !!('ontouchstart' in window) || !!('onmsgesturechange' in window); // works on ie10
@@ -13,4 +13,4 @@ jQuery(document).ready(function($) {
 			function(){$(this).parents().toggleClass("hover");}
 		);
 	}
-});
+})(jQuery);
