@@ -6,7 +6,7 @@
 
 	if (!is_touch_device()) {
 		$('[role=navigation] li').hover(
-			function(){$(this).addClass("hover");},
+			function(){$(this).addClass("ccadm-hover");},
 			function(){$(this).delay('250').removeClass("ccadm-hover");}
 		);
 		$('[role=navigation] li a').on('focus blur',

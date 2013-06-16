@@ -14,7 +14,7 @@ function ccadm_scripts() {
 add_action( 'wp_enqueue_scripts', 'ccadm_scripts' );
 
 
-function reviseStyles() {
+function ccadm_styles() {
 	if (!wp_is_mobile())
 		{   $strHtml = '<style type="text/css">
 		/* Extra styles to allow keyboard accessibility of dropdown menus */
@@ -31,4 +31,4 @@ function reviseStyles() {
 
 		echo $strHtml;}
 }
-add_action('wp_head', 'reviseStyles');
+add_action('wp_head', 'ccadm_styles');
