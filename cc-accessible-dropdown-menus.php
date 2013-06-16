@@ -18,13 +18,13 @@ function ccadm_styles() {
 	if (!wp_is_mobile())
 		{   $strHtml = '<style type="text/css">
 		/* Extra styles to allow keyboard accessibility of dropdown menus */
-		[role="navigation"] ul ul {
+		div:not(#wpadminbar) [role="navigation"] ul ul {
 			display: block !important;
 			margin-left:-9999px !important;
 		}
 
-		[role="navigation"] ul li.ccadm-hover > ul,
-		[role="navigation"] ul a:focus+ul {
+		div:not(#wpadminbar) [role="navigation"] ul li.ccadm-hover > ul,
+		div:not(#wpadminbar) [role="navigation"] ul a:focus+ul {
 			margin-left:0 !important;
 		}
 	</style>';
