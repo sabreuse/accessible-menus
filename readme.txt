@@ -1,4 +1,4 @@
-=== cc Accessible Dropdown Menus ===
+=== Accessible Dropdown Menus ===
 Contributors: sabreuse, grahamarmfield
 Tags: accessibility, a11y, menus, dropdown menus, navigation, keyboard navigation
 Requires at least: 3.4
@@ -7,7 +7,7 @@ Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Makes dropdown menus in default WordPress themes keyboard accessible.
+Makes dropdown menus in many WordPress themes keyboard accessible.
 
 == Description ==
 
@@ -40,7 +40,7 @@ The mechanism used in this plugin is based on the same logic used in Blake Haswe
 
 = Will this work with any theme? =
 
-We can't guarantee that it works in all themes, but it now works in many more than in earlier versions. It has been tested in Twenty Ten through Twenty Thirteen, themes based on Automattic's Underscores base theme, and a number of others. The plugin looks for the "navigation" ARIA role rather than any particular ID, so it should work in most themes that correctly implement roles.
+We can't guarantee that it works in all themes, but it now works with many more than in earlier versions. It has been tested in Twenty Ten through Twenty Thirteen, themes based on Automattic's Underscores base theme, and a number of others. The plugin looks for the "navigation" ARIA role rather than any particular ID, so it should work in most themes that correctly implement roles.
 
 = What about child themes? =
 
