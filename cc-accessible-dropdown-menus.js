@@ -13,4 +13,4 @@
 			function(){$(this).parents().toggleClass("hover");}
 		);
 	}
-})(jQuery);
+}(jQuery));
