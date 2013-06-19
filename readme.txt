@@ -4,8 +4,8 @@ Tags: accessibility, a11y, menus, dropdown menus, navigation, keyboard navigatio
 Requires at least: 3.4
 Tested up to: 3.6
 Stable tag: 0.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: MIT
+License URI: http://opensource.org/licenses/MIT
 
 Makes dropdown menus in many WordPress themes keyboard accessible.
 
