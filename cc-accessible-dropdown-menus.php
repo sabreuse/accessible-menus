@@ -19,16 +19,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 
 function ccadm_scripts() {
-	wp_enqueue_script(
-		'ccadm_script', plugins_url( '/cc-accessible-dropdown-menus.js' , __FILE__ ), array( 'jquery'), false, true
-	);
+	if ( !wp_is_mobile() ) {
+		wp_enqueue_script(
+			'ccadm_script', plugins_url( '/cc-accessible-dropdown-menus.js' , __FILE__ ), array( 'jquery'), false, true);
+	}
 }
 add_action( 'wp_enqueue_scripts', 'ccadm_scripts' );
 
 
 function ccadm_styles() {
-	if (!wp_is_mobile())
-		{   $strHtml = '<style type="text/css">
+	if ( !wp_is_mobile() ) {
+	$strHtml = '<style type="text/css">
 		/* Extra styles to allow keyboard accessibility of dropdown menus */
 		div:not(#wpadminbar) [role="navigation"] ul ul {
 			display: block !important;
@@ -41,6 +42,7 @@ function ccadm_styles() {
 		}
 	</style>';
 
-		echo $strHtml;}
+		echo $strHtml;
+	}
 }
 add_action('wp_head', 'ccadm_styles');
