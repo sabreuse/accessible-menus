@@ -21,7 +21,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 function ccadm_scripts() {
 	if ( !wp_is_mobile() ) {
 		wp_enqueue_script(
-			'ccadm_script', plugins_url( '/cc-accessible-dropdown-menus.js' , __FILE__ ), array( 'jquery'), false, true);
+			'ccadm_script', plugins_url( '/accessible-dropdown-menus.js' , __FILE__ ), array( 'jquery'), false, true);
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ccadm_scripts' );
